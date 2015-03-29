@@ -63,7 +63,7 @@
   "noyield"       : false,     // true: Tolerate yield statement
 
   // Environments
-  "browser"       : false,    // Web Browser (window, document, etc)
+  "browser"       : true,     // Web Browser (window, document, etc)
   "couch"         : false,    // CouchDB
   "devel"         : false,    // Development/debugging (alert, confirm, etc)
   "dojo"          : false,    // Dojo Toolkit

@@ -1,0 +1,26 @@
+{
+  "name": "pouchdb-observe",
+  "main": "dist/pouchdb.observe.min.js",
+  "version": "0.1.0",
+  "authors": [
+    "Jonathan Diehl <jonathan.diehl@gmail.com>"
+  ],
+  "description": "PouchDB Observer Plugin",
+  "license": "MIT",
+  "keywords": [
+    "pouch",
+    "pouchdb",
+    "plugin",
+    "observer",
+    "couch",
+    "couchdb"
+  ],
+  "ignore": [
+    "**/.*",
+    "bin",
+    "node_modules",
+    "plugin",
+    "test",
+    "*.js"
+  ]
+}

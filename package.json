@@ -15,7 +15,7 @@
     "couch",
     "couchdb"
   ],
-  "author": "",
+  "author": "Jonathan Diehl",
   "license": "MIT",
   "scripts": {
     "test-node": "TEST_DB=testdb,http://localhost:5984/testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
