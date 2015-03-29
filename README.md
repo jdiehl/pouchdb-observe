@@ -1,10 +1,7 @@
-PouchDB Plugin Seed
-=====
+PouchDB Observer Plugin
+====
 
 [![Build Status](https://travis-ci.org/pouchdb/plugin-seed.svg)](https://travis-ci.org/pouchdb/plugin-seed)
-
-Fork this project to build your first PouchDB plugin.  It contains everything you need to test in Node, WebSQL, and IndexedDB.  It also includes a Travis config file so you
-can automatically run the tests in Travis.
 
 Building
 ----

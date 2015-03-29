@@ -1,32 +1,29 @@
 {
-  "name": "pouchdb-plugin-seed",
+  "name": "pouchdb-observe",
   "version": "0.1.0",
-  "description": "PouchDB Plugin Seed project",
+  "description": "PouchDB Observer Plugin",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pouchdb/plugin-seed.git"
+    "url": "https://github.com/jdiehl/pouchdb-observe.git"
   },
   "keywords": [
     "pouch",
     "pouchdb",
     "plugin",
-    "seed",
+    "observer",
     "couch",
     "couchdb"
   ],
   "author": "",
-  "license": "Apache",
-  "bugs": {
-    "url": "https://github.com/pouchdb/plugin-seed/issues"
-  },
+  "license": "MIT",
   "scripts": {
     "test-node": "TEST_DB=testdb,http://localhost:5984/testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
     "test-browser": "./bin/test-browser.js",
     "jshint": "jshint -c .jshintrc *.js test/test.js",
     "test": "npm run jshint && ./bin/run-test.sh",
-    "build": "mkdir -p dist && browserify index.js -o dist/pouchdb.mypluginname.js && npm run min",
-    "min": "uglifyjs dist/pouchdb.mypluginname.js -mc > dist/pouchdb.mypluginname.min.js",
+    "build": "mkdir -p dist && browserify index.js -o dist/pouchdb.observe.js && npm run min",
+    "min": "uglifyjs dist/pouchdb.observe.js -mc > dist/pouchdb.observe.min.js",
     "dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
     "dev-server": "./bin/dev-server.js",
     "coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
