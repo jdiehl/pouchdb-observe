@@ -78,7 +78,6 @@ module.exports = function (db, request, callback) {
     triggered = true;
     setTimeout(function () {
       triggered = false;
-      console.log('trigger', self.items);
       callback(self.items);
     });
   };
