@@ -1,6 +1,7 @@
 'use strict';
 
-var Observer = require('./Observer');
+var ObserverGet = require('./observer-get');
+var ObserverFind = require('./observer-find');
 
 function init(db) {
   db._observers = [];
@@ -16,7 +17,12 @@ module.exports = function (request, callback) {
 
   if (db._observers === undefined) init(db);
 
-  var observer = new Observer(db, request, callback);
+  var observer;
+  if (typeof request === 'string') {
+    observer = new ObserverGet(db, request, callback);
+  } else {
+    observer = new ObserverFind(db, request, callback);
+  }
   db._observers.push(observer);
 
   observer.remove = function () {

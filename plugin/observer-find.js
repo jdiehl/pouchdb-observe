@@ -1,6 +1,10 @@
 'use strict';
 
 function comparatorMatches(comparator, v1, v2) {
+  if (v1 instanceof Date && v2 instanceof Date) {
+    v1 = v1 - v2;
+    v2 = 0;
+  }
   switch (comparator) {
     case '$eq': return v1 === v2;
     case '$ne': return v1 !== v2;
