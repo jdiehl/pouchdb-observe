@@ -1,6 +1,9 @@
 'use strict';
 
 function comparatorMatches(comparator, v1, v2) {
+  if (v2 instanceof Date && typeof v1 === 'string') {
+    v1 = new Date(v1);
+  }
   if (v1 instanceof Date && v2 instanceof Date) {
     v1 = v1 - v2;
     v2 = 0;
