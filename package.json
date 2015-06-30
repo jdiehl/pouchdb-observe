@@ -1,6 +1,6 @@
 {
   "name": "pouchdb-observe",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "PouchDB Observer Plugin",
   "main": "index.js",
   "repository": {

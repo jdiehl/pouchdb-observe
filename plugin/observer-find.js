@@ -10,12 +10,12 @@ function comparatorMatches(comparator, v1, v2) {
   }
   switch (comparator) {
     case '$eq': return v1 === v2;
-    case '$ne': return v1 !== v2;
     case '$gt': return v1 > v2;
     case '$gte': return v1 >= v2;
     case '$lt': return v1 < v2;
     case '$lte': return v1 <= v2;
     case '$in': return v2.indexOf(v1) >= 0;
+    case '$ne':
     case '$nin': return v2.indexOf(v1) < 0;
     case '$exists': return v2 ? typeof v1 !== 'undefined' : typeof v1 === 'undefined';
     case '$type': return typeof v1 === v2;
